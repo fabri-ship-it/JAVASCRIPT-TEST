@@ -9,11 +9,16 @@
         <script>
             // Aquí el nostre codi
             // Declarar les variables necessàries amb let i buscar al DOM el paràgraf que modificarem
-           
-            function suma()
-            {
-                // Per convertir un string (text) a número farem servir Number(text) (on posa text cal posar el text amb el número)
+           let n1 = document.getElementById("num1");
+           let n2 = document.getElementById("num2");
+           let resultat = document.getElementById("resultat");
+    
+           function suma(){
+                let num = Number(n1.value) + Number(n2.value);
+                resultat.textContent = num;
             }
+            // Per convertir un string (text) a número farem servir Number(text) (on posa text cal posar el text amb el número)
+
         </script>
     </body>
 </html>
