@@ -10,6 +10,11 @@
             // Aquí el nostre codi
             // Declarar les variables necessàries amb let i buscar al DOM els elements que farem servir
 
+            let num1 = document.getElementById("num1");
+            let num2 = document.getElementById("num2");
+            let resultat = document.getElementById("resultat")
+            
+            
             function resta()
             {
                 // TODO:
@@ -17,6 +22,10 @@
                 // 2) Converteix-los a Number(...)
                 // 3) Fes la resta (num1 - num2)
                 // 4) Mostra el resultat dins del <p id="resultat">
+                
+                let num = Number(n1.value) - Number(n2.value);
+                resultat.textContent = num;
+
             }
         </script>
     </body>
